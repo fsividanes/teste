@@ -1,0 +1,81 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+main {
+    border-top: solid 8px purple;
+    width: 480px ;
+    height: 615px;
+    background-color: hsl(39, 65%, 80%);
+    margin: auto; 
+    display: flex;
+    align-items: center;  
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);
+
+}
+
+.black-bar {
+    width: 100%;
+    height: 48px;
+    background-color: hsl(220,15%,28%);
+}
+
+.btn-cardapio{
+    width: 240px;
+    height: 120px;
+    background-color:white;
+    padding: 16px;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px hsla(0, 0%, 0%, .2);   
+}
+
+.btn-cardapio:hover{
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .2);
+}
+
+.btn-pedido{
+    width: 240px;
+    height: 16px;
+    background-color: grey;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 2px 2px hsla(0, 0%, 0%, .2); 
+
+    
+}
+
+@media (max-width: 575px){
+
+    main{
+        flex-direction: column;
+    }
+
+    .btn-cardapio{
+        margin:48px;
+    }
+
+
+}
+
+@media (min-width: 576px){
+    
+   
+    
+    .btn-pedido{
+        margin-bottom: 48px;
+        position: relative;
+        left: 0px;
+    }
+
+    .btn-cardapio{
+        margin-bottom: 48px;
+        position: relative;
+        right: 72px;
+    }
+
+
+}
+
+
